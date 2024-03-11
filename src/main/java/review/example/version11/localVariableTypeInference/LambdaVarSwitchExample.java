@@ -23,7 +23,7 @@ public class LambdaVarSwitchExample {
         System.out.println("Month " + month + " is in " + season);
 
         // other switch cases
-        var resInvalid = validSwitch();
+        var resInvalid = validSwitch(); // assign var value from switch
         System.out.println(resInvalid);
     }
 

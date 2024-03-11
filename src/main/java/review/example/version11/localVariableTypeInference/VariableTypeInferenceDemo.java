@@ -14,7 +14,6 @@ public class VariableTypeInferenceDemo {
         for (var number : numbers) {
             System.out.println(number); // 'number' is inferred as Integer
         }
-        // Limitation with Switch
 
     }
 }
