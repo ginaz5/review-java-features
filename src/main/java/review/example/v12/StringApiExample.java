@@ -20,7 +20,7 @@ public class StringApiExample {
         System.out.println(result);
     }
     private static Double getFloat() {
-        return 3.1415926;－
+        return 3.1415926;
     }
 
 
