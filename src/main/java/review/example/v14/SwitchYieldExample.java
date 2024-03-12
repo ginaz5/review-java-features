@@ -6,10 +6,13 @@ public class SwitchYieldExample {
     }
 
     public static void main(String[] args) {
-        testYield();
+        testEnumYield();
+
+        String generalYield = testGeneralYield(1);
+        System.out.println("General yield: " + generalYield);
     }
 
-    public static void testYield() {
+    public static void testEnumYield() {
         // Example: Change this to test different cases
         DayOfWeek dayOfWeek = DayOfWeek.THURSDAY;
 
@@ -34,6 +37,17 @@ public class SwitchYieldExample {
         };
 
         System.out.println("Day type code: " + dayType);
+    }
+
+    public static String testGeneralYield(int number) {
+            return switch (number) {
+                case 1, 2 -> "one or two";
+                case 3 -> "three";
+                case 4, 5, 6 -> "four or five or six";
+
+                // default is required
+                default -> throw new IllegalStateException("Unexpected value: " + number);
+            };
     }
 
     /* Limitation
