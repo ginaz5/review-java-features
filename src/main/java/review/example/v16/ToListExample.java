@@ -16,7 +16,7 @@ public class ToListExample {
         // difference
 //        Stream.toList() -> Immutable
 //        Collectors.toUnmodifiableList() -> Immutable
-//        Collectors.toList() -> mutable
+//        Collectors.toList() -> modifiable
         // Performance
     }
 }
